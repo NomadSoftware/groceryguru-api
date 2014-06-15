@@ -1,4 +1,4 @@
-package biz.nomadsoftware.market_minder.model;
+package biz.nomadsoftware.groceryguru.model;
 
 import java.util.Objects;
 
@@ -11,15 +11,15 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
 @JsonNaming(LowerCaseWithUnderscoresStrategy.class)
 @JsonInclude(Include.NON_EMPTY)
-public class User {
+public class Aisle {
 
 	private Long id;
 
-	public User() {
+	public Aisle() {
 		// for jackson
 	}
 
-	public User(Long id) {
+	public Aisle(Long id) {
 		this.id = id;
 	}
 
@@ -30,7 +30,6 @@ public class User {
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -48,7 +47,7 @@ public class User {
 		if (getClass() != obj.getClass()) {
 			return false;
 		}
-		User other = (User) obj;
+		Aisle other = (Aisle) obj;
 		return Objects.equals(id, other.id);
 	}
 

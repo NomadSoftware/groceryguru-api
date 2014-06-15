@@ -1,4 +1,4 @@
-package biz.nomadsoftware.market_minder.model;
+package biz.nomadsoftware.groceryguru.model;
 
 import java.util.Objects;
 
@@ -11,15 +11,15 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
 @JsonNaming(LowerCaseWithUnderscoresStrategy.class)
 @JsonInclude(Include.NON_EMPTY)
-public class Store {
+public class Item {
 
 	private Long id;
 
-	public Store() {
+	public Item() {
 		// for jackson
 	}
 
-	public Store(Long id) {
+	public Item(Long id) {
 		this.id = id;
 	}
 
@@ -47,7 +47,7 @@ public class Store {
 		if (getClass() != obj.getClass()) {
 			return false;
 		}
-		Store other = (Store) obj;
+		Item other = (Item) obj;
 		return Objects.equals(id, other.id);
 	}
 
