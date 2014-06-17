@@ -11,15 +11,15 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
 @JsonNaming(LowerCaseWithUnderscoresStrategy.class)
 @JsonInclude(Include.NON_EMPTY)
-public class User {
+public class Device {
 
 	private Long id;
 
-	public User() {
+	public Device() {
 		// for jackson
 	}
 
-	public User(Long id) {
+	public Device(Long id) {
 		this.id = id;
 	}
 
@@ -48,7 +48,7 @@ public class User {
 		if (getClass() != obj.getClass()) {
 			return false;
 		}
-		User other = (User) obj;
+		Device other = (Device) obj;
 		return Objects.equals(id, other.id);
 	}
 
