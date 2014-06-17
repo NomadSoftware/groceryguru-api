@@ -3,6 +3,7 @@ package biz.nomadsoftware.groceryguru.model;
 import java.util.Objects;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.joda.time.DateTime;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
@@ -15,6 +16,8 @@ public class Account {
 
 	private Long id;
 	private Long parent;
+	private DateTime created;
+	private DateTime updated;
 	private Integer version;
 
 	public Account() {
@@ -39,6 +42,22 @@ public class Account {
 
 	public void setParent(Long parent) {
 		this.parent = parent;
+	}
+
+	public DateTime getCreated() {
+		return created;
+	}
+
+	public void setCreated(DateTime created) {
+		this.created = created;
+	}
+
+	public DateTime getUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(DateTime updated) {
+		this.updated = updated;
 	}
 
 	public Integer getVersion() {
