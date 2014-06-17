@@ -15,6 +15,7 @@ public class Account {
 
 	private Long id;
 	private Long parent;
+	private Integer version;
 
 	public Account() {
 		// for jackson
@@ -38,6 +39,14 @@ public class Account {
 
 	public void setParent(Long parent) {
 		this.parent = parent;
+	}
+
+	public Integer getVersion() {
+		return version;
+	}
+
+	public void setVersion(Integer version) {
+		this.version = version;
 	}
 
 	@Override

@@ -14,6 +14,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 public class Item {
 
 	private Long id;
+	private Integer version;
 
 	public Item() {
 		// for jackson
@@ -29,6 +30,14 @@ public class Item {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public Integer getVersion() {
+		return version;
+	}
+
+	public void setVersion(Integer version) {
+		this.version = version;
 	}
 
 	@Override

@@ -17,6 +17,7 @@ public class Aisle {
 	private Long accountId;
 	private Long storeId;
 	private Integer orderSequence;
+	private Integer version;
 
 	public Aisle() {
 		// for jackson
@@ -64,6 +65,14 @@ public class Aisle {
 
 	public void setOrder(Integer order) {
 		this.orderSequence = order;
+	}
+
+	public Integer getVersion() {
+		return version;
+	}
+
+	public void setVersion(Integer version) {
+		this.version = version;
 	}
 
 	@Override
