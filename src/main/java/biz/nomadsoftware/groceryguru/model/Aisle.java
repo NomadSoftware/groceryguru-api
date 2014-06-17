@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 public class Aisle {
 
 	private Long id;
-	private Integer order;
+	private Integer orderSequence;
 
 	public Aisle() {
 		// for jackson
@@ -33,11 +33,11 @@ public class Aisle {
 	}
 
 	public Integer getOrder() {
-		return order;
+		return orderSequence;
 	}
 
 	public void setOrder(Integer order) {
-		this.order = order;
+		this.orderSequence = order;
 	}
 
 	@Override
