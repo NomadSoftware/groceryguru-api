@@ -14,6 +14,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 public class Account {
 
 	private Long id;
+	private Long parent;
 
 	public Account() {
 		// for jackson
@@ -29,6 +30,14 @@ public class Account {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public Long getParent() {
+		return parent;
+	}
+
+	public void setParent(Long parent) {
+		this.parent = parent;
 	}
 
 	@Override
