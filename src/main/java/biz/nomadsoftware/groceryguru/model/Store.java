@@ -15,6 +15,8 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 public class Store {
 
 	private Long id;
+	private Long accountId;
+	private Integer orderSequence;
 	private DateTime created;
 	private DateTime updated;
 	private Integer version;
@@ -33,6 +35,22 @@ public class Store {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public Long getAccountId() {
+		return accountId;
+	}
+
+	public void setAccountId(Long accountId) {
+		this.accountId = accountId;
+	}
+
+	public Integer getOrderSequence() {
+		return orderSequence;
+	}
+
+	public void setOrderSequence(Integer orderSequence) {
+		this.orderSequence = orderSequence;
 	}
 
 	public DateTime getCreated() {

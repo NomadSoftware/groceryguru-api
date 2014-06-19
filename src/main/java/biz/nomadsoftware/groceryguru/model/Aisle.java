@@ -15,7 +15,6 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 public class Aisle {
 
 	private Long id;
-	private Long accountId;
 	private Long storeId;
 	private Integer orderSequence;
 	private DateTime created;
@@ -36,14 +35,6 @@ public class Aisle {
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-
-	public Long getAccountId() {
-		return accountId;
-	}
-
-	public void setAccountId(Long accountId) {
-		this.accountId = accountId;
 	}
 
 	public Long getStoreId() {

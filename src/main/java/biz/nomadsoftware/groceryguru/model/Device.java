@@ -15,6 +15,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 public class Device {
 
 	private Long id;
+	private Long accountId;
 	private DateTime created;
 	private DateTime updated;
 	private Integer version;
@@ -33,6 +34,14 @@ public class Device {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public Long getAccountId() {
+		return accountId;
+	}
+
+	public void setAccountId(Long accountId) {
+		this.accountId = accountId;
 	}
 
 	public DateTime getCreated() {

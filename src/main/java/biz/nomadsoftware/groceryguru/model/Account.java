@@ -15,7 +15,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 public class Account {
 
 	private Long id;
-	private Long parent;
+	private Long parentAccountId;
 	private DateTime created;
 	private DateTime updated;
 	private Integer version;
@@ -36,12 +36,12 @@ public class Account {
 		this.id = id;
 	}
 
-	public Long getParent() {
-		return parent;
+	public Long getParentAccountId() {
+		return parentAccountId;
 	}
 
-	public void setParent(Long parent) {
-		this.parent = parent;
+	public void setParentAccountId(Long parent) {
+		this.parentAccountId = parent;
 	}
 
 	public DateTime getCreated() {

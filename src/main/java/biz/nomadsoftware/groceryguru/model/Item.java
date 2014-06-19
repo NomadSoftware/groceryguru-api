@@ -15,6 +15,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 public class Item {
 
 	private Long id;
+	private Long aisleId;
 	private DateTime created;
 	private DateTime updated;
 	private Integer version;
@@ -33,6 +34,14 @@ public class Item {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public Long getAisleId() {
+		return aisleId;
+	}
+
+	public void setAisleId(Long aisleId) {
+		this.aisleId = aisleId;
 	}
 
 	public DateTime getCreated() {
