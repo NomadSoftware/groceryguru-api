@@ -29,11 +29,11 @@ public class ReadableInstantMatcher {
 
 	/**
 	 * @param readableInstant
-	 * @see org.joda.time.ReadableInstant#equals(org.joda.time.ReadableInstant)
+	 * @see org.joda.time.ReadableInstant#isEqual(org.joda.time.ReadableInstant)
 	 */
 	@Factory
 	public static Matcher<ReadableInstant> equals(ReadableInstant readableInstant) {
-		return new ReadableInstantEquals(readableInstant);
+		return new ReadableInstantIsEqual(readableInstant);
 	}
 
 	private static class ReadableInstantBefore extends TypeSafeMatcher<ReadableInstant> {
@@ -76,11 +76,11 @@ public class ReadableInstantMatcher {
 
 	}
 
-	private static class ReadableInstantEquals extends TypeSafeMatcher<ReadableInstant> {
+	private static class ReadableInstantIsEqual extends TypeSafeMatcher<ReadableInstant> {
 
 		private final ReadableInstant rhs;
 
-		ReadableInstantEquals(ReadableInstant readableInstant) {
+		ReadableInstantIsEqual(ReadableInstant readableInstant) {
 			rhs = readableInstant;
 		}
 
