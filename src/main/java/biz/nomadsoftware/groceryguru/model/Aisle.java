@@ -53,14 +53,6 @@ public class Aisle {
 		this.orderSequence = orderSequence;
 	}
 
-	public Integer getOrder() {
-		return orderSequence;
-	}
-
-	public void setOrder(Integer order) {
-		this.orderSequence = order;
-	}
-
 	public DateTime getCreated() {
 		return created;
 	}
